@@ -1,0 +1,49 @@
+{
+  "name": "dsh-adobe-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Drive Adobe After Effects, Illustrator and Photoshop from DeepSeek Harness: AE over a CEP panel bridge, AI/PS over Windows COM",
+  "type": "module",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "ai-run.ps1",
+    "ps-run.ps1",
+    "cordis.patch.yml",
+    "cep-extension",
+    "install-cep.ps1",
+    "README.md",
+    "LICENSE",
+    "docs"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "adobe",
+    "after-effects",
+    "illustrator",
+    "photoshop",
+    "cep",
+    "extendscript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcj07247-cpu/dsh-adobe-bridge.git"
+  },
+  "homepage": "https://github.com/kcj07247-cpu/dsh-adobe-bridge#readme",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.2"
+  }
+}
