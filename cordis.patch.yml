@@ -1,0 +1,5 @@
+# One bundle row: Adobe bridge tools (AE via CEP, AI/PS via COM).
+- insert:
+    - id: dsh-adobe-bridge
+      name: dsh-adobe-bridge
+      config: {}
